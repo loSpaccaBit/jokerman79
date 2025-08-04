@@ -1,0 +1,54 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "seed": "node seed.js",
+    "seed:force": "node seed.js --force",
+    "test:api": "node test-api.js",
+    "test:registration": "node test-registration.js",
+    "check:structure": "node check-structure.js",
+    "test:graphql": "node test-graphql.js",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "generate-secrets": "node scripts/generate-secrets.js",
+    "generate-secrets:write": "node scripts/generate-secrets.js --write",
+    "generate-secrets:force": "node scripts/generate-secrets.js --write --force"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "^5.7.0",
+    "@strapi/plugin-graphql": "^5.7.0",
+    "@strapi/plugin-users-permissions": "^5.7.0",
+    "@strapi/strapi": "^5.7.0",
+    "cross-fetch": "^4.1.0",
+    "pg": "^8.12.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.19",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.11.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "709186ab-a3be-4702-9a66-0bbcae2d533a",
+    "installId": "2a5e03d84ac78165fa458c2eff92e7ecf46f222892e8656d8668a946af47187e"
+  }
+}

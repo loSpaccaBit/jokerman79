@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provider_bonuses",
+  "info": {
+    "singularName": "provider-bonus",
+    "pluralName": "provider-bonuses",
+    "displayName": "Provider Bonus",
+    "description": "Exclusive bonuses for specific providers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "welcome",
+        "deposit",
+        "free-spins",
+        "cashback",
+        "reload"
+      ],
+      "required": true
+    },
+    "amount": {
+      "type": "string",
+      "description": "Bonus amount display (e.g., '100€ + 50 Free Spins')"
+    },
+    "code": {
+      "type": "string",
+      "description": "Bonus code if required"
+    },
+    "terms": {
+      "type": "json",
+      "description": "Array of terms and conditions"
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "description": "URL to claim the bonus"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "validUntil": {
+      "type": "datetime",
+      "description": "Bonus expiration date"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::provider.provider",
+      "inversedBy": "bonuses"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "description": "Display order"
+    }
+  }
+}

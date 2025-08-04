@@ -1,0 +1,56 @@
+{
+    "kind": "collectionType",
+    "collectionName": "partners",
+    "info": {
+        "singularName": "partner",
+        "pluralName": "partners",
+        "displayName": "Partner",
+        "description": "Partners displayed on homepage"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255,
+            "description": "Partner name displayed on the card"
+        },
+        "text": {
+            "type": "richtext",
+            "required": true,
+            "description": "Partner description/text content"
+        },
+        "img": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ],
+            "description": "Partner image/logo"
+        },
+        "imgAlt": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Alternative text for the image (accessibility)"
+        },
+        "isReversed": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to reverse the layout (image on right instead of left)"
+        },
+        "isFeatured": {
+            "type": "boolean",
+            "default": false,
+            "description": "Show this partner on the homepage"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0,
+            "description": "Display order on homepage (lower numbers first)"
+        }
+    }
+}

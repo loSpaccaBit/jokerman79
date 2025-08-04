@@ -1,0 +1,72 @@
+{
+    "kind": "collectionType",
+    "collectionName": "advertisements",
+    "info": {
+        "singularName": "advertisement",
+        "pluralName": "advertisements",
+        "displayName": "Advertisement",
+        "description": "Advertisements and promotional content"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255,
+            "description": "Advertisement title"
+        },
+        "description": {
+            "type": "text",
+            "required": false,
+            "description": "Advertisement description"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ],
+            "description": "Advertisement image"
+        },
+        "url": {
+            "type": "string",
+            "required": false,
+            "maxLength": 500,
+            "description": "Advertisement target URL"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether the advertisement is active"
+        },
+        "position": {
+            "type": "enumeration",
+            "enum": [
+                "header",
+                "sidebar",
+                "footer",
+                "content",
+                "mobile"
+            ],
+            "default": "sidebar",
+            "description": "Where to display the advertisement"
+        },
+        "order": {
+            "type": "integer",
+            "default": 0,
+            "description": "Display order"
+        },
+        "startDate": {
+            "type": "datetime",
+            "description": "Advertisement start date"
+        },
+        "endDate": {
+            "type": "datetime",
+            "description": "Advertisement end date"
+        }
+    }
+}

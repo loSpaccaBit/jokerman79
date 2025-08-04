@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "search",
+    "description": "SEO component for meta tags"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "text",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "metaImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "metaRobots": {
+      "type": "string",
+      "default": "index,follow"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "metaViewport": {
+      "type": "string",
+      "default": "width=device-width, initial-scale=1"
+    },
+    "canonicalURL": {
+      "type": "string"
+    }
+  }
+}
