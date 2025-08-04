@@ -1,0 +1,195 @@
+/* Live Stats Specific Styles - Following Jokerman79 Design System */
+
+/* Live Status Animations */
+@keyframes live-pulse {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8; 
+    transform: scale(1.05);
+  }
+}
+
+.live-pulse {
+  animation: live-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Result Update Animations */
+@keyframes result-update {
+  0% { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+  25% { 
+    transform: scale(1.1); 
+    opacity: 0.9; 
+  }
+  100% { 
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+
+.result-update {
+  animation: result-update 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Live Connection Status Colors */
+.status-live {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: white;
+}
+
+.status-offline {
+  background: #6B7280;
+  color: white;
+}
+
+.status-error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: white;
+}
+
+/* Roulette Number Colors - Enhanced for better visibility */
+.roulette-red {
+  background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+  color: white;
+  border: 1px solid #991B1B;
+}
+
+.roulette-black {
+  background: linear-gradient(135deg, #374151 0%, #1F2937 100%);
+  color: white;
+  border: 1px solid #111827;
+}
+
+.roulette-green {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  border: 1px solid #065F46;
+}
+
+/* Special Event Styling */
+.special-event {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: white;
+  animation: live-pulse 1.5s infinite;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+/* Minimal Card Hover Effects */
+.minimal-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.minimal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Loading States */
+.live-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+}
+
+.dark .live-loading {
+  background: linear-gradient(90deg, #374151 25%, #4B5563 50%, #374151 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes loading-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Trend Indicators */
+.trend-up {
+  color: #10B981;
+}
+
+.trend-down {
+  color: #EF4444;
+}
+
+.trend-neutral {
+  color: #6B7280;
+}
+
+/* Pattern Grid Responsive */
+.pattern-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+}
+
+@media (min-width: 640px) {
+  .pattern-grid {
+    grid-template-columns: repeat(15, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .pattern-grid {
+    grid-template-columns: repeat(20, 1fr);
+  }
+}
+
+/* Sticky Header Enhancement */
+.sticky-header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+}
+
+.dark .sticky-header {
+  background: rgba(31, 41, 55, 0.8);
+}
+
+/* Stream Player Integration */
+.stream-container {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* Enhanced Focus States for Accessibility */
+.live-interactive:focus-visible {
+  outline: 2px solid #F59E0B;
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .minimal-card {
+    border: 2px solid currentColor;
+  }
+  
+  .roulette-red,
+  .roulette-black,
+  .roulette-green {
+    border: 2px solid white;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .live-pulse,
+  .result-update,
+  .special-event {
+    animation: none;
+  }
+  
+  .minimal-card {
+    transition: none;
+  }
+}

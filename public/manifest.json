@@ -1,0 +1,91 @@
+{
+    "name": "Jokerman79 - Slot Demo Gratuite e Statistiche Live",
+    "short_name": "Jokerman",
+    "description": "Scopri le migliori slot demo gratuite, statistiche live e recensioni dei provider. Gioca responsabilmente con le slot machine più popolari.",
+    "icons": [
+        {
+            "src": "/icons/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "background_color": "#18181b",
+    "theme_color": "#18181b",
+    "orientation": "portrait",
+    "scope": "/",
+    "lang": "it",
+    "dir": "ltr",
+    "prefer_related_applications": false,
+    "categories": [
+        "giochi",
+        "casino",
+        "slot",
+        "statistiche",
+        "blog"
+    ],
+    "screenshots": [
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "label": "Homepage Jokerman79"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Slot Demo",
+            "short_name": "Slot Demo",
+            "description": "Vai subito alle slot demo gratuite",
+            "url": "/slots"
+        },
+        {
+            "name": "Statistiche Live",
+            "short_name": "Statistiche",
+            "description": "Consulta le statistiche slot in tempo reale",
+            "url": "/stats"
+        },
+        {
+            "name": "Blog",
+            "short_name": "Blog",
+            "description": "Leggi gli ultimi articoli e news",
+            "url": "/blog"
+        }
+    ]
+}

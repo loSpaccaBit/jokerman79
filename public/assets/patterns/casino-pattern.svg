@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <pattern id="casino-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <!-- Stelle stilizzate -->
+            <circle cx="10" cy="10" r="1" fill="currentColor" opacity="0.3"/>
+            <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.3"/>
+            <!-- Diamanti stilizzati -->
+            <polygon points="20,5 22,10 20,15 18,10" fill="currentColor" opacity="0.2"/>
+            <polygon points="5,20 10,22 5,25 0,22" fill="currentColor" opacity="0.2"/>
+            <!-- Pattern geometrico -->
+            <rect x="15" y="25" width="2" height="2" fill="currentColor" opacity="0.1"/>
+            <rect x="25" y="15" width="2" height="2" fill="currentColor" opacity="0.1"/>
+        </pattern>
+    </defs>
+    <rect width="40" height="40" fill="url(#casino-pattern)"/>
+</svg>

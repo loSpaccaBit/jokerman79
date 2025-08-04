@@ -1,0 +1,56 @@
+{
+    "advertisements": [
+        {
+            "id": "revolut-1",
+            "documentId": "revolut-main",
+            "title": "Revolut - La tua banca digitale",
+            "description": "Scopri Revolut, la carta che ti fa risparmiare in tutto il mondo. Cambi valuta al tasso interbancario, investi in crypto e azioni, e gestisci tutto dall'app.",
+            "shortDescription": "Banca digitale senza commissioni",
+            "url": "https://revolut.com/referral/?referral-code=JOKERMAN79",
+            "buttonText": "Apri Conto Gratis",
+            "brandColor": "#0066FF",
+            "position": "sidebar",
+            "type": "financial",
+            "priority": 1,
+            "isActive": true,
+            "image": {
+                "url": "/assets/Revolut.png",
+                "alternativeText": "Revolut Card",
+                "width": 400,
+                "height": 300
+            },
+            "thumbnailImage": {
+                "url": "/assets/Revolut.png",
+                "alternativeText": "Revolut Thumbnail",
+                "width": 200,
+                "height": 150
+            }
+        },
+        {
+            "id": "revolut-2",
+            "documentId": "revolut-trading",
+            "title": "American Express",
+            "description": "Investi in azioni, ETF e crypto con commissioni zero. Trading semplice e sicuro direttamente dalla tua app Revolut.",
+            "shortDescription": "Trading senza commissioni",
+            "url": "https://revolut.com/referral/?referral-code=JOKERMAN79",
+            "buttonText": "Inizia a Investire",
+            "brandColor": "#00D4FF",
+            "position": "sidebar",
+            "type": "trading",
+            "priority": 2,
+            "isActive": true,
+            "image": {
+                "url": "/assets/American-Express-Logo-Download-Free-PNG.png",
+                "alternativeText": "American Express",
+                "width": 400,
+                "height": 300
+            },
+            "thumbnailImage": {
+                "url": "/assets/American-Express-Logo-Download-Free-PNG.png",
+                "alternativeText": "American Express Thumbnail",
+                "width": 200,
+                "height": 150
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+/* Stili personalizzati per il rendering markdown dei blog post */
+
+.prose-blog {
+  /* Miglioramenti per la readability */
+  @apply text-foreground leading-relaxed;
+  
+  /* Headings con spaziatura ottimizzata */
+  h1, h2, h3, h4, h5, h6 {
+    @apply scroll-mt-20;
+  }
+  
+  /* Tabelle responsive */
+  table {
+    @apply text-sm;
+  }
+  
+  /* Lista con spaziatura migliorata */
+  ul, ol {
+    @apply space-y-1;
+  }
+  
+  /* Codice inline migliorato */
+  code {
+    @apply text-primary bg-primary/10 px-1.5 py-0.5 rounded text-sm;
+  }
+  
+  /* Blocchi di codice */
+  pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto;
+  }
+  
+  pre code {
+    @apply bg-transparent p-0 text-sm;
+  }
+  
+  /* Citazioni */
+  blockquote {
+    @apply border-l-4 border-primary/50 pl-4 italic my-6 bg-muted/30 py-2;
+  }
+  
+  /* Link migliorati */
+  a {
+    @apply text-primary hover:text-primary/80 underline underline-offset-2 transition-colors font-medium;
+  }
+  
+  /* Immagini responsive */
+  img {
+    @apply max-w-full h-auto rounded-lg shadow-md;
+  }
+  
+  /* Evidenziazione del testo */
+  strong {
+    @apply font-semibold text-foreground;
+  }
+  
+  em {
+    @apply italic text-foreground/90;
+  }
+}
+
+/* Stili specifici per tabelle */
+.markdown-table {
+  @apply overflow-x-auto my-6;
+}
+
+.markdown-table table {
+  @apply min-w-full border-collapse;
+}
+
+.markdown-table th {
+  @apply bg-muted/50 border border-border px-4 py-3 text-left font-semibold text-foreground text-sm;
+}
+
+.markdown-table td {
+  @apply border border-border px-4 py-3 text-muted-foreground text-sm;
+}
+
+.markdown-table tr:hover {
+  @apply bg-muted/30 transition-colors;
+}
+
+/* Animazioni per elementi interattivi */
+.blog-tag {
+  @apply transition-all duration-200 hover:scale-105;
+}
+
+.blog-meta {
+  @apply flex items-center gap-1 text-sm text-muted-foreground;
+}
+
+/* Dark mode specifico per markdown */
+@media (prefers-color-scheme: dark) {
+  .prose-blog blockquote {
+    @apply bg-muted/20;
+  }
+  
+  .prose-blog code {
+    @apply bg-primary/20;
+  }
+}
