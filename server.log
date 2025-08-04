@@ -1,0 +1,857 @@
+
+> casino-microservice@1.0.0 start
+> node server.js
+
+[2025-08-03T17:37:10.478Z] [32mINFO[0m: Initializing Casino Providers...
+[2025-08-03T17:37:10.479Z] [32mINFO[0m: Initializing Evolution Gaming...
+[2025-08-03T17:37:10.967Z] [32mINFO[0m: Evolution Gaming initialized {"gameCount":50}
+[2025-08-03T17:37:10.967Z] [32mINFO[0m: Initializing Pragmatic Play...
+[2025-08-03T17:37:10.968Z] [32mINFO[0m: Pragmatic Play initialized {"gameCount":25}
+[2025-08-03T17:37:10.968Z] [32mINFO[0m: Providers initialization completed {"count":2,"providers":["evolution","pragmatic"]}
+[2025-08-03T17:37:10.970Z] [32mINFO[0m: Casino Microservice started {"port":"4000","websocketUrl":"ws://localhost:4000/ws","healthCheck":"http://localhost:4000/api/health","metricsUrl":"http://localhost:4000/api/metrics","environment":"development","maxConnections":5000,"memoryMonitoring":true}
+[2025-08-03T17:37:10.970Z] [32mINFO[0m: Advanced performance monitoring started {"memoryInterval":8000,"autoGC":true,"bufferPoolSize":1000}
+[2025-08-03T17:37:18.971Z] [32mINFO[0m: Memory warning threshold exceeded {"heapUsedMB":7.685798645019531,"memoryRatio":0.78702578125}
+[2025-08-03T17:37:24.527Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754242644527_g9kr3j512","clientIP":"::1"}
+[2025-08-03T17:37:24.540Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754242644540_jusad094w","clientIP":"::1"}
+[2025-08-03T17:37:24.544Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242644527_g9kr3j512","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+🔌 Connecting to evolution WebSocket...
+[2025-08-03T17:37:24.552Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242644540_jusad094w","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+🔌 Connecting to evolution WebSocket...
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:24.705Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242644540_jusad094w","providerName":"evolution","gameId":"evolution"}
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:24.706Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242644527_g9kr3j512","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:33.857Z] [32mINFO[0m: Client unsubscribing from game {"clientId":"client_1754242644540_jusad094w","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:33.857Z] [32mINFO[0m: Client unsubscribing from game {"clientId":"client_1754242644527_g9kr3j512","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:33.858Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242644540_jusad094w","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:33.858Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242644540_jusad094w","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:33.858Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242644527_g9kr3j512","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:33.859Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242644527_g9kr3j512","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:34.973Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.445869445800781,"memoryRatio":0.8031733202544576}
+[2025-08-03T17:37:42.974Z] [33mWARN[0m: Emergency memory pressure detected {"heapUsedMB":9.374046325683594,"memoryRatio":0.9359422228451638}
+[2025-08-03T17:37:50.974Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.625236511230469,"memoryRatio":0.8402056875475646}
+[2025-08-03T17:37:57.950Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754242644540_jusad094w"}
+[2025-08-03T17:37:57.951Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754242644527_g9kr3j512"}
+[2025-08-03T17:37:58.975Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.8919677734375,"memoryRatio":0.8661886415525114}
+[2025-08-03T17:37:59.774Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754242679774_slumsyn3s","clientIP":"::1"}
+[2025-08-03T17:37:59.793Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754242679793_ee1rvelkd","clientIP":"::1"}
+[2025-08-03T17:37:59.795Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242679774_slumsyn3s","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:59.796Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242679774_slumsyn3s","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:37:59.802Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242679793_ee1rvelkd","providerName":"evolution","gameId":"evolution"}
+✅ Adding subscription for game: { id: 'evolution', name: 'evolution' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T17:37:59.804Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242679793_ee1rvelkd","providerName":"evolution","gameId":"evolution"}
+[2025-08-03T17:38:06.976Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.24462890625,"memoryRatio":0.8791326151560178}
+[2025-08-03T17:38:14.977Z] [33mWARN[0m: Emergency memory pressure detected {"heapUsedMB":9.509201049804688,"memoryRatio":0.9042925218239227}
+[2025-08-03T17:38:22.977Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.887443542480469,"memoryRatio":0.8451655077544576}
+[2025-08-03T17:38:30.977Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.229774475097656,"memoryRatio":0.877720009518945}
+[2025-08-03T17:38:38.978Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.451576232910156,"memoryRatio":0.898812598671991}
+[2025-08-03T17:38:39.308Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754242719308_621s17ujm","clientIP":"::1"}
+[2025-08-03T17:38:39.312Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754242719308_621s17ujm","providerName":"pragmatic","gameId":"1101"}
+✅ Adding subscription for game: {
+  id: '1101',
+  name: 'Sweet Bonanza CandyLand',
+  provider: 'Pragmatic Play',
+  gameType: 'Sweet Bonanza CandyLand',
+  vertical: 'live',
+  status: 'open',
+  playerCount: 0,
+  language: 'en',
+  providerData: { tableKey: '1101', subscribed: false }
+}
+🎯 PragmaticProvider: Setting selected game to 1101 {
+  id: '1101',
+  name: 'Sweet Bonanza CandyLand',
+  provider: 'Pragmatic Play',
+  gameType: 'Sweet Bonanza CandyLand',
+  vertical: 'live',
+  status: 'open',
+  playerCount: 0,
+  language: 'en',
+  providerData: { tableKey: '1101', subscribed: false }
+}
+✅ PragmaticProvider: Selected game set: {
+  id: '1101',
+  name: 'Sweet Bonanza CandyLand',
+  provider: 'Pragmatic Play',
+  gameType: 'Sweet Bonanza CandyLand',
+  vertical: 'live',
+  status: 'open',
+  playerCount: 0,
+  language: 'en',
+  providerData: { tableKey: '1101', subscribed: false }
+}
+⏳ PragmaticProvider: WebSocket not ready, will subscribe after receiving available tables
+🔌 Connecting to pragmatic WebSocket...
+✅ WebSocket connection successful for pragmatic
+[2025-08-03T17:38:39.510Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754242719308_621s17ujm","providerName":"pragmatic","gameId":"1101"}
+🎯 PragmaticProvider: Subscribing to table: 1101
+📤 PragmaticProvider: Sending subscription message: {
+  type: 'subscribe',
+  key: '1101',
+  casinoId: 'il9srgw4dna11111',
+  currency: 'EUR'
+}
+✅ PragmaticProvider: Marked game 1101 as subscribed
+🎮 PragmaticProvider: Handling game update for table 1101
+🎲 PragmaticProvider: Game result for table 1101: {
+  gameResult: [
+    {
+      gameId: '7666490219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:38:34 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666490019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:37:48 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:37:02 PM',
+      sugarbomb: true,
+      sbmul: [Array],
+      multiplier: 2,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489619',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:35:36 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:34:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:34:03 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489119',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:33:14 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:32:26 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:31:40 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:30:53 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488519',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:30:07 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488319',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:29:17 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:28:31 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:27:45 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487819',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:57 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:09 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:25:22 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:24:37 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487219',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487019',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:06 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    }
+  ],
+  totalSeatedPlayers: 3953,
+  tableId: '1101',
+  tableName: 'Sweet Bonanza CandyLand',
+  newTable: false,
+  dedicatedLanguage: 'en',
+  tableImage: 'https://client.pragmaticplaylive.net/desktop/assets/snaps/pbvzrfk1fyft4dwe/poster.jpg?v=0.2836241182029511',
+  tableLimits: {
+    ranges: [ 0.1, 0.2, 0.25, 0.4, 0.5, 1 ],
+    minBet: 0.2,
+    maxBet: 3000,
+    maxPlayers: 13000
+  },
+  dealer: { name: 'Daneli' },
+  tableOpen: true,
+  tableType: 'SWEETBONANZA',
+  tableSubtype: 'SweetBonanza',
+  gameLoaderKey: 'sweetbonanza2',
+  currency: 'EUR'
+}
+📤 PragmaticProvider: Calling onGameUpdate callback
+📤 PragmaticProvider: Calling onGameUpdate callback for table 1101
+[2025-08-03T17:38:46.979Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.412178039550781,"memoryRatio":0.8544388574911348}
+🎮 PragmaticProvider: Handling game update for table 1101
+🎲 PragmaticProvider: Game result for table 1101: {
+  gameResult: [
+    {
+      gameId: '7666490219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:38:34 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666490019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:37:48 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:37:02 PM',
+      sugarbomb: true,
+      sbmul: [Array],
+      multiplier: 2,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489619',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:35:36 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:34:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:34:03 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489119',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:33:14 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:32:26 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:31:40 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:30:53 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488519',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:30:07 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488319',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:29:17 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:28:31 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:27:45 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487819',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:57 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:09 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:25:22 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:24:37 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487219',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487019',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:06 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    }
+  ],
+  totalSeatedPlayers: 3945,
+  tableId: '1101',
+  tableName: 'Sweet Bonanza CandyLand',
+  newTable: false,
+  dedicatedLanguage: 'en',
+  tableImage: 'https://client.pragmaticplaylive.net/desktop/assets/snaps/pbvzrfk1fyft4dwe/poster.jpg?v=0.2836241182029511',
+  tableLimits: {
+    ranges: [ 0.1, 0.2, 0.25, 0.4, 0.5, 1 ],
+    minBet: 0.2,
+    maxBet: 3000,
+    maxPlayers: 13000
+  },
+  dealer: { name: 'Daneli' },
+  tableOpen: true,
+  tableType: 'SWEETBONANZA',
+  tableSubtype: 'SweetBonanza',
+  gameLoaderKey: 'sweetbonanza2',
+  currency: 'EUR'
+}
+📤 PragmaticProvider: Calling onGameUpdate callback
+📤 PragmaticProvider: Calling onGameUpdate callback for table 1101
+[2025-08-03T17:38:54.980Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.159461975097656,"memoryRatio":0.8314972573138298}
+🎮 PragmaticProvider: Handling game update for table 1101
+🎲 PragmaticProvider: Game result for table 1101: {
+  gameResult: [
+    {
+      gameId: '7666490219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:38:34 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666490019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:37:48 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:37:02 PM',
+      sugarbomb: true,
+      sbmul: [Array],
+      multiplier: 2,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489619',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:35:36 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:34:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:34:03 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489119',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:33:14 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666489019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:32:26 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488819',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:31:40 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:30:53 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488519',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:30:07 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488319',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:29:17 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488219',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:28:31 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666488019',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:27:45 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487819',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:57 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487719',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:26:09 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487519',
+      result: '2',
+      winner: 'TWO',
+      time: 'Aug 3, 2025 5:25:22 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487319',
+      result: '5',
+      winner: 'FIVE',
+      time: 'Aug 3, 2025 5:24:37 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487219',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:51 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    },
+    {
+      gameId: '7666487019',
+      result: '1',
+      winner: 'ONE',
+      time: 'Aug 3, 2025 5:23:06 PM',
+      sugarbomb: false,
+      sbmul: [],
+      multiplier: 1,
+      payout: [Array],
+      rc: 1
+    }
+  ],
+  totalSeatedPlayers: 3961,
+  tableId: '1101',
+  tableName: 'Sweet Bonanza CandyLand',
+  newTable: false,
+  dedicatedLanguage: 'en',
+  tableImage: 'https://client.pragmaticplaylive.net/desktop/assets/snaps/pbvzrfk1fyft4dwe/poster.jpg?v=0.2836241182029511',
+  tableLimits: {
+    ranges: [ 0.1, 0.2, 0.25, 0.4, 0.5, 1 ],
+    minBet: 0.2,
+    maxBet: 3000,
+    maxPlayers: 13000
+  },
+  dealer: { name: 'Daneli' },
+  tableOpen: true,
+  tableType: 'SWEETBONANZA',
+  tableSubtype: 'SweetBonanza',
+  gameLoaderKey: 'sweetbonanza2',
+  currency: 'EUR'
+}
+📤 PragmaticProvider: Calling onGameUpdate callback
+📤 PragmaticProvider: Calling onGameUpdate callback for table 1101
+[2025-08-03T17:39:00.318Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754242719308_621s17ujm"}
+🔄 PragmaticProvider: Unsubscribing from table: 1101
+🎯 PragmaticProvider: Setting selected game to null null
+🧹 PragmaticProvider: Clearing selected game
+🔄 PragmaticProvider: Unsubscribing from table: 1101
+[2025-08-03T17:39:02.981Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.7408447265625,"memoryRatio":0.8842752659574468}
+[2025-08-03T17:39:10.982Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.903152465820312,"memoryRatio":0.8990095855496454}
+[2025-08-03T17:39:18.983Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.585762023925781,"memoryRatio":0.870196836214539}
+[2025-08-03T17:39:26.983Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.768653869628906,"memoryRatio":0.8867997839095745}
+[2025-08-03T17:39:34.984Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.428947448730469,"memoryRatio":0.8559611868351064}
+[2025-08-03T17:39:40.176Z] [32mINFO[0m: Shutting down server...
+[2025-08-03T17:39:40.176Z] [32mINFO[0m: Provider disconnected {"provider":"evolution"}
+🔌 PragmaticProvider: Disconnecting...
+✅ PragmaticProvider: Disconnected
+[2025-08-03T17:39:40.176Z] [32mINFO[0m: Provider disconnected {"provider":"pragmatic"}
+[2025-08-03T17:39:40.177Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754242679774_slumsyn3s"}
+[2025-08-03T17:39:40.177Z] [32mINFO[0m: Server shut down successfully

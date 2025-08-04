@@ -1,0 +1,133 @@
+
+> casino-microservice@1.0.0 start
+> node server.js
+
+[2025-08-03T21:56:44.902Z] [32mINFO[0m: Initializing Casino Providers...
+[2025-08-03T21:56:44.903Z] [32mINFO[0m: Initializing Evolution Gaming...
+[2025-08-03T21:56:45.250Z] [32mINFO[0m: Evolution Gaming initialized {"gameCount":50}
+[2025-08-03T21:56:45.250Z] [32mINFO[0m: Initializing Pragmatic Play...
+[2025-08-03T21:56:45.251Z] [32mINFO[0m: Pragmatic Play initialized {"gameCount":25}
+[2025-08-03T21:56:45.251Z] [32mINFO[0m: Providers initialization completed {"count":2,"providers":["evolution","pragmatic"]}
+[2025-08-03T21:56:45.252Z] [32mINFO[0m: Casino Microservice started {"port":"4000","websocketUrl":"ws://localhost:4000/ws","healthCheck":"http://localhost:4000/api/health","metricsUrl":"http://localhost:4000/api/metrics","environment":"development","maxConnections":5000,"memoryMonitoring":true}
+[2025-08-03T21:56:45.253Z] [32mINFO[0m: Advanced performance monitoring started {"memoryInterval":8000,"autoGC":true,"bufferPoolSize":1000}
+[2025-08-03T21:56:53.253Z] [32mINFO[0m: Memory warning threshold exceeded {"heapUsedMB":7.692863464355469,"memoryRatio":0.749380915858067}
+[2025-08-03T21:57:01.254Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":7.851081848144531,"memoryRatio":0.80395078125}
+[2025-08-03T21:57:09.255Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.094841003417969,"memoryRatio":0.82891171875}
+[2025-08-03T21:57:17.256Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.098487854003906,"memoryRatio":0.82928515625}
+[2025-08-03T21:57:23.372Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258243372_9b5e1h4jy","clientIP":"::1"}
+Unknown message type: test
+[2025-08-03T21:57:25.256Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.182220458984375,"memoryRatio":0.837859375}
+[2025-08-03T21:57:25.377Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258243372_9b5e1h4jy"}
+[2025-08-03T21:57:33.257Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.205223083496094,"memoryRatio":0.84021484375}
+[2025-08-03T21:57:41.259Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.208885192871094,"memoryRatio":0.84058984375}
+[2025-08-03T21:57:49.260Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.212593078613281,"memoryRatio":0.84096953125}
+[2025-08-03T21:57:57.261Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.215995788574219,"memoryRatio":0.84131796875}
+[2025-08-03T21:58:05.262Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.219261169433594,"memoryRatio":0.84165234375}
+[2025-08-03T21:58:13.263Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.222694396972656,"memoryRatio":0.84200390625}
+[2025-08-03T21:58:21.265Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.226417541503906,"memoryRatio":0.84238515625}
+[2025-08-03T21:58:23.961Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258303961_fz2dxr2pl","clientIP":"::1"}
+[2025-08-03T21:58:23.972Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258303961_fz2dxr2pl","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+🔌 Connecting to evolution WebSocket...
+[2025-08-03T21:58:23.975Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258303975_wacyf6pb6","clientIP":"::1"}
+[2025-08-03T21:58:23.983Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258303975_wacyf6pb6","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+🔌 Connecting to evolution WebSocket...
+✅ WebSocket connection successful for evolution
+[2025-08-03T21:58:24.143Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258303975_wacyf6pb6","providerName":"evolution","gameId":"pragmatic"}
+✅ WebSocket connection successful for evolution
+[2025-08-03T21:58:24.146Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258303961_fz2dxr2pl","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T21:58:31.618Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258303975_wacyf6pb6"}
+[2025-08-03T21:58:31.622Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258303961_fz2dxr2pl"}
+[2025-08-03T21:58:32.999Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258312999_m93a6oo5q","clientIP":"::1"}
+[2025-08-03T21:58:33.012Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258313012_kebvko712","clientIP":"::1"}
+[2025-08-03T21:58:33.013Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258312999_m93a6oo5q","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T21:58:33.014Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258312999_m93a6oo5q","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T21:58:33.021Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258313012_kebvko712","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T21:58:33.023Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258313012_kebvko712","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T21:58:37.265Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.978851318359375,"memoryRatio":0.874652183219178}
+[2025-08-03T21:58:53.266Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.420402526855469,"memoryRatio":0.8958480857633729}
+[2025-08-03T21:59:01.267Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.898551940917969,"memoryRatio":0.8462218784825408}
+[2025-08-03T21:59:09.268Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.189567565917969,"memoryRatio":0.873896469864413}
+[2025-08-03T21:59:17.269Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.24169921875,"memoryRatio":0.8788540118870728}
+[2025-08-03T21:59:25.270Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.35357666015625,"memoryRatio":0.8894931742199108}
+[2025-08-03T21:59:33.271Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.909019470214844,"memoryRatio":0.8472173047455424}
+[2025-08-03T21:59:41.272Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.250434875488281,"memoryRatio":0.8796847429884844}
+[2025-08-03T21:59:49.273Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.679229736328125,"memoryRatio":0.8253650863670133}
+[2025-08-03T21:59:57.274Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.969261169433594,"memoryRatio":0.8529460844632244}
+[2025-08-03T22:00:05.275Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.385528564453125,"memoryRatio":0.8925316911218425}
+[2025-08-03T22:00:05.275Z] [32mINFO[0m: Performance metrics {"connections":2,"subscriptions":2,"messagesPerSecond":0,"memoryMB":9,"gcCount":0,"memoryPressure":2}
+[2025-08-03T22:00:13.275Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.03399658203125,"memoryRatio":0.8591022009658247}
+[2025-08-03T22:00:21.276Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.039642333984375,"memoryRatio":0.8596390926820208}
+[2025-08-03T22:00:29.276Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.239646911621094,"memoryRatio":0.8786588444929421}
+[2025-08-03T22:00:37.277Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.749114990234375,"memoryRatio":0.832010935178306}
+[2025-08-03T22:00:45.278Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.108291625976562,"memoryRatio":0.8661674057392273}
+[2025-08-03T22:00:53.278Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.243499755859375,"memoryRatio":0.8790252368127786}
+[2025-08-03T22:01:01.278Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.772804260253906,"memoryRatio":0.8342637037982912}
+[2025-08-03T22:01:09.278Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.169601440429688,"memoryRatio":0.871997759565379}
+[2025-08-03T22:01:17.278Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.40777587890625,"memoryRatio":0.8946473346953938}
+[2025-08-03T22:01:25.280Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.071502685546875,"memoryRatio":0.8626689032317979}
+[2025-08-03T22:01:33.281Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.285140991210938,"memoryRatio":0.8829851759843982}
+[2025-08-03T22:01:41.282Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.752662658691406,"memoryRatio":0.8323483063242942}
+[2025-08-03T22:01:49.282Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.006599426269531,"memoryRatio":0.8564968250835809}
+[2025-08-03T22:01:57.283Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.250114440917969,"memoryRatio":0.8796542707559435}
+[2025-08-03T22:02:05.285Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.787857055664062,"memoryRatio":0.8356951731983655}
+[2025-08-03T22:02:13.285Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.057281494140625,"memoryRatio":0.8613165165304606}
+[2025-08-03T22:02:21.287Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.166351318359375,"memoryRatio":0.871688684063893}
+[2025-08-03T22:02:29.287Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.103836059570312,"memoryRatio":0.8657436966010401}
+[2025-08-03T22:02:37.289Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.408042907714844,"memoryRatio":0.8946727282225111}
+[2025-08-03T22:02:45.289Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.804832458496094,"memoryRatio":0.837309475993685}
+[2025-08-03T22:02:53.291Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.353851318359375,"memoryRatio":0.8895192932763745}
+[2025-08-03T22:03:01.292Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":8.775749206542969,"memoryRatio":0.8345437581259286}
+[2025-08-03T22:03:09.292Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.064262390136719,"memoryRatio":0.8619803758822436}
+[2025-08-03T22:03:13.300Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258313012_kebvko712"}
+[2025-08-03T22:03:13.300Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258312999_m93a6oo5q"}
+[2025-08-03T22:03:14.795Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258594795_golclk6bm","clientIP":"::1"}
+[2025-08-03T22:03:14.806Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258594806_8amf2tf97","clientIP":"::1"}
+[2025-08-03T22:03:14.808Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258594795_golclk6bm","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T22:03:14.809Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258594795_golclk6bm","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T22:03:14.816Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258594806_8amf2tf97","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T22:03:14.819Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258594806_8amf2tf97","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T22:03:17.293Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.610687255859375,"memoryRatio":0.8927198612119013}
+[2025-08-03T22:03:24.025Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258594795_golclk6bm"}
+[2025-08-03T22:03:24.025Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258594806_8amf2tf97"}
+[2025-08-03T22:03:25.294Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.4193115234375,"memoryRatio":0.8749433055152395}
+[2025-08-03T22:03:33.296Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.808059692382812,"memoryRatio":0.8903770500886525}
+[2025-08-03T22:03:41.296Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.513824462890625,"memoryRatio":0.8636663342198582}
+[2025-08-03T22:03:45.388Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258625388_jg0m6tt0t","clientIP":"::1"}
+[2025-08-03T22:03:45.398Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258625388_jg0m6tt0t","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T22:03:45.399Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258625388_jg0m6tt0t","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T22:03:45.399Z] [32mINFO[0m: New WebSocket connection {"clientId":"client_1754258625399_8li4bja3p","clientIP":"::1"}
+[2025-08-03T22:03:45.408Z] [32mINFO[0m: Client subscribing to game {"clientId":"client_1754258625399_8li4bja3p","providerName":"evolution","gameId":"pragmatic"}
+✅ Adding subscription for game: { id: 'pragmatic', name: 'pragmatic' }
+✅ WebSocket connection successful for evolution
+[2025-08-03T22:03:45.409Z] [32mINFO[0m: Subscription successful {"clientId":"client_1754258625399_8li4bja3p","providerName":"evolution","gameId":"pragmatic"}
+[2025-08-03T22:03:49.297Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.929336547851562,"memoryRatio":0.8095255274681529}
+[2025-08-03T22:03:57.298Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.447196960449219,"memoryRatio":0.8385861379594314}
+[2025-08-03T22:04:05.299Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.594970703125,"memoryRatio":0.8517033633841886}
+[2025-08-03T22:04:13.301Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":10.013900756835938,"memoryRatio":0.8888899423543689}
+[2025-08-03T22:04:21.300Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.45257568359375,"memoryRatio":0.8390635835644937}
+[2025-08-03T22:04:29.301Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.480171203613281,"memoryRatio":0.8415131165481969}
+[2025-08-03T22:04:37.303Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.952911376953125,"memoryRatio":0.8834761832524272}
+[2025-08-03T22:04:45.304Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.594596862792969,"memoryRatio":0.8516701792215673}
+[2025-08-03T22:04:53.305Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.84600830078125,"memoryRatio":0.8739868671983356}
+[2025-08-03T22:05:01.306Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.542572021484375,"memoryRatio":0.8470521627947295}
+[2025-08-03T22:05:01.307Z] [32mINFO[0m: Performance metrics {"connections":2,"subscriptions":2,"messagesPerSecond":0,"memoryMB":10,"gcCount":0,"memoryPressure":2}
+[2025-08-03T22:05:09.306Z] [33mWARN[0m: Critical memory pressure detected {"heapUsedMB":9.894416809082031,"memoryRatio":0.8782838776438974}
+[2025-08-03T22:05:12.694Z] [32mINFO[0m: Shutting down server...
+[2025-08-03T22:05:12.695Z] [32mINFO[0m: Provider disconnected {"provider":"evolution"}
+🔌 PragmaticProvider: Disconnecting...
+✅ PragmaticProvider: Disconnected
+[2025-08-03T22:05:12.695Z] [32mINFO[0m: Provider disconnected {"provider":"pragmatic"}
+[2025-08-03T22:05:12.696Z] [32mINFO[0m: Client disconnected {"clientId":"client_1754258625388_jg0m6tt0t"}
+[2025-08-03T22:05:12.696Z] [32mINFO[0m: Server shut down successfully
